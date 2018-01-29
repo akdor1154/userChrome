@@ -1,0 +1,35 @@
+
+/* hide tab bar if only one tab */
+tab:only-of-type { 
+    display:none !important; 
+}
+
+/* unset the tab bar min-height */ 
+#tabbrowser-tabs, #tabbrowser-tabs > .tabbrowser-arrowscrollbox, #tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
+    min-height: initial !important;
+}
+
+/* set the height on the tabs instead */
+tab { 
+    line-height: 17px; min-height: 26px; 
+}
+
+/* hide new tab button so tab-bar can collapse */
+.tabs-newtab-button { 
+    display: none; 
+}
+
+.tab-line {
+    display: none;
+}
+
+.tab-background {
+    border-width: 0px !important;
+}
+.tab-content > * {
+    margin-top: 0px;
+}
+
+#TabsToolbar {
+  min-height: 0px !important;
+}
